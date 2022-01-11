@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>My name</title>
+    <title>Greetings</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
@@ -13,25 +13,26 @@
     <div id="root"></div>
     <script type="text/babel">
 
-
         const person = {
             firstName: 'Joona',
             lastName: 'Karhu'
         }
 
-        function Element() {
-            return <h3>Hello, {person.firstName} {person.lastName}</h3>;
-        }
 
-        
-        /*const element = (
-            <h3>
-                Hello, {person. firstName} {person. lastName}
-            </h3>
-        )*/
+        const element = (
+            <div>
+                <h3>
+                    Greetings
+                </h3> 
+                <p>
+                {person.firstName} {person.lastName}
+                </p>
+            </div>
+        );
+
 
       ReactDOM.render(
-        <Element />,
+        element,
         document.getElementById('root')
       );
 

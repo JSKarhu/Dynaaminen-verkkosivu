@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>My name</title>
+    <title>Multiple components</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
@@ -10,31 +10,25 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
+      <!-- use tick index and show only seconds -->
     <div id="root"></div>
     <script type="text/babel">
+    
+    function Greeting(props) {
+        return <p>Hello {props.name}</p>;
+    }
 
+    function App() {
+        return (
+            <div>
+                <Greeting name='Joona' />
+                <Greeting name='Jatta' />
+                <Greeting name='Silvi' />
+            </div>
+        )
+    }
 
-        const person = {
-            firstName: 'Joona',
-            lastName: 'Karhu'
-        }
-
-        function Element() {
-            return <h3>Hello, {person.firstName} {person.lastName}</h3>;
-        }
-
-        
-        /*const element = (
-            <h3>
-                Hello, {person. firstName} {person. lastName}
-            </h3>
-        )*/
-
-      ReactDOM.render(
-        <Element />,
-        document.getElementById('root')
-      );
-
+        ReactDOM.render(<App />,document.getElementById('root'));
     </script>
     <!--
       Note: this page is a great way to try React but it's not suitable for production.
