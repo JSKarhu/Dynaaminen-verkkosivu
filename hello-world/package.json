@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "homepage": "http://localhost/react-test/",
+  "name": "hello-world",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
