@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+  const [rivit, setRivit] = useState([]);
+
+  useEffect(() => {
+    const nimet = ['Joona', 'Silvi', 'Jatta', 'Joku0.1', 'Eikukka'];
+    setRivit(nimet);
+    /* console.log('useEffect');
+    console.log(nimet); */
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style= {{margin: '30px'}}>
+      <h3>Nimet</h3>
+      <ul>
+        {
+          rivit.map(rivi => (
+            <li key={rivi}>{rivi}</li>
+          ))
+        }
+      </ul>
     </div>
   );
 }
