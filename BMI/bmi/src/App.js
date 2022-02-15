@@ -7,6 +7,7 @@ function App() {
   const [pituus, setPituus] = useState(0);
   const [paino, setPaino] = useState(9)
   const [bmi, setBmi] = useState(0)
+ 
 
   function handleSubmit(e) {
     e.preventDefault();

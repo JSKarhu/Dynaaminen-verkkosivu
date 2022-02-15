@@ -1,16 +1,16 @@
 import './App.css';
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 
 
 function App() {
   return (
-    <Switch>
-      <Route path='/' component={Home} exact />
-      <Route path='/about' component={About} />
-    </Switch>
+   <Routes>
+     <Route path='/' element={<Home />} />
+     <Route path='/about' element={<About />} />
+   </Routes>
   );
 }
 

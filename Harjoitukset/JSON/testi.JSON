@@ -1,0 +1,54 @@
+{
+    "opintojakso": [
+        {
+            "otsikko": "test",
+            "laajuus": "This is test content...",
+            "opettaja": {
+                "lastname": "Pekkanen",
+                "firstname": "Pekka"
+            },
+            "date": "10.2.2021",
+            "opiskelijat": [
+                {
+                    "opiskelija1": {
+                        "lastname": "Andersson",
+                        "firstname": "Timo"
+                    },
+                    "opiskelija2": {
+                        "lastname": "Korhonen",
+                        "firstname": "Antero"
+                    },
+                    "opiskelija3": {
+                        "lastname": "Korianteri",
+                        "firstname": "Arhippa"
+                    }
+                }
+            ]
+        },
+        {
+            "otsikko": "test",
+            "laajuus": "This is test content...",
+            "opettaja": {
+                "lastname": "Mikkonen",
+                "firstname": "Mikko"
+            },
+            "date": "11.2.2021",
+            "opiskelijat": [
+                {
+                    "opiskelija1": {
+                        "lastname": "Liisanpoika",
+                        "firstname": "Liisa"
+                    },
+                    "opiskelija2": {
+                        "lastname": "Pekanpoika",
+                        "firstname": "Pekka"
+                    },
+                    "opiskelija3": {
+                        "lastname": "Justus",
+                        "firstname": "Juuso"
+                    }
+                }
+            ]
+        }
+    ]
+}
